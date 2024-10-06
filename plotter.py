@@ -22,7 +22,7 @@ def plot_all(arquivos_configuracao: list[dict[str]], outdir: str):
         print(grafico)
         figura, ax = plotlib.subplots()
 
-        for i, legendas in zip(grafico["pontos"],grafico["legendas"]): 
+        for i, legendas in zip(grafico["pontos"], grafico["legendas"]): 
             x = []
             y = []
             for j in i:
@@ -44,6 +44,7 @@ def plot_all(arquivos_configuracao: list[dict[str]], outdir: str):
         ax.set_ylabel(grafico["ylabel"])
         ax.legend()
         plotlib.savefig(f"{outdir}/{grafico['nome_arquivo']}.{grafico['formato']}")
+        
         plotlib.show()
 
 arquivos = config("./conf")

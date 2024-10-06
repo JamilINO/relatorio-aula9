@@ -1,7 +1,8 @@
 {
     "titulo": "Capacitor Carga e Descarga",
-    "xlabel": "t (Segundos)",
-    "ylabel": "R (Ohms)",
+    "xlabel": "R (Ohms)",
+    "ylabel": "t (Segundos)",
+
 
     "pontos": [
         [
